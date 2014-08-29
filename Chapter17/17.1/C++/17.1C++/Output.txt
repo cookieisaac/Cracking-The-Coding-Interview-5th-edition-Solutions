@@ -1,0 +1,20 @@
+First integer: 5 Second Integer: 23
+After swap in-place: 
+First integer: 23 Second Integer: 5
+
+First integer: -23 Second Integer: 89
+After swap in-place: 
+First integer: 89 Second Integer: -23
+
+First integer: 0 Second Integer: -7
+After swap in-place: 
+First integer: -7 Second Integer: 0
+
+First integer: 100 Second Integer: 100
+After swap in-place: 
+First integer: 100 Second Integer: 100
+
+First integer: 65 Second Integer: 56
+After swap in-place: 
+First integer: 56 Second Integer: 65
+
