@@ -1,0 +1,20 @@
+There are 1 trailing zeros  in factorial of 5
+=================================
+There are 6 trailing zeros  in factorial of 25
+=================================
+There are 31 trailing zeros  in factorial of 125
+=================================
+There are 31 trailing zeros  in factorial of 126
+=================================
+There are 0 trailing zeros  in factorial of 0
+=================================
+There are 0 trailing zeros  in factorial of 3
+=================================
+Can't compute trailing zeros for -23
+=================================
+There are 2499 trailing zeros  in factorial of 10000
+=================================
+There are 28 trailing zeros  in factorial of 120
+=================================
+There are 28 trailing zeros  in factorial of 123
+=================================
