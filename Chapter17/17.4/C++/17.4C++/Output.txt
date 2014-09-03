@@ -1,0 +1,26 @@
+Maximum of 2147483647 and -2147483646 is 2147483647
+Maximum of 2147483647 and -2147483646 is -2147483646 using naive method (might overflow/underflow).
+Maximum of 2147483647 and -5 is 2147483647
+Maximum of 2147483647 and -5 is -5 using naive method (might overflow/underflow).
+Maximum of -2147483646 and 2147483647 is 2147483647
+Maximum of -2147483646 and 2147483647 is -2147483646 using naive method (might overflow/underflow).
+Maximum of 3 and -2147483646 is 3
+Maximum of 3 and -2147483646 is -2147483646 using naive method (might overflow/underflow).
+Maximum of 5 and 3 is 5
+Maximum of 5 and 3 is 5 using naive method (might overflow/underflow).
+Maximum of 3 and 5 is 5
+Maximum of 3 and 5 is 5 using naive method (might overflow/underflow).
+Maximum of 5 and -3 is 5
+Maximum of 5 and -3 is 5 using naive method (might overflow/underflow).
+Maximum of -3 and 5 is 5
+Maximum of -3 and 5 is 5 using naive method (might overflow/underflow).
+Maximum of 0 and 5 is 5
+Maximum of 0 and 5 is 5 using naive method (might overflow/underflow).
+Maximum of 5 and 0 is 5
+Maximum of 5 and 0 is 5 using naive method (might overflow/underflow).
+Maximum of -3 and 0 is 0
+Maximum of -3 and 0 is 0 using naive method (might overflow/underflow).
+Maximum of 0 and -3 is 0
+Maximum of 0 and -3 is 0 using naive method (might overflow/underflow).
+Maximum of 0 and -3 is 0
+Maximum of 0 and -3 is 0 using naive method (might overflow/underflow).
