@@ -1,0 +1,12 @@
+Actual solution is RRRR and your guess is GGGG
+You have made 0 hit(s) and 0 pseudo hit(s)
+*************************************************
+Actual solution is RGBY and your guess is GGRR
+You have made 1 hit(s) and 1 pseudo hit(s)
+*************************************************
+Actual solution is RRRR and your guess is RRRR
+You have made 4 hit(s) and 0 pseudo hit(s)
+*************************************************
+Actual solution is GGBR and your guess is GBRG
+You have made 1 hit(s) and 3 pseudo hit(s)
+*************************************************
