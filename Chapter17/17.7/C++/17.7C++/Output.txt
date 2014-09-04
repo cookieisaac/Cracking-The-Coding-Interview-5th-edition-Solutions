@@ -1,0 +1,28 @@
+0 reads as Zero
+*********************************
+1 reads as One
+*********************************
+-1 reads as Negative One
+*********************************
+100 reads as One Hundred
+*********************************
+101 reads as One Hundred and One
+*********************************
+2147483647 reads as Two Billion, One Hundred and Forty-Seven Million, Four Hundred and Eighty-Three Thousand, Six Hundred and Forty-Seven
+*********************************
+-2147483647 reads as Negative Two Billion, One Hundred and Forty-Seven Million, Four Hundred and Eighty-Three Thousand, Six Hundred and Forty-Seven
+*********************************
+1000 reads as One Thousand
+*********************************
+1100 reads as One Thousand, One Hundred
+*********************************
+1110 reads as One Thousand, One Hundred and Ten
+*********************************
+1111 reads as One Thousand, One Hundred and Eleven
+*********************************
+1000000000 reads as One Billion
+*********************************
+1230045789 reads as One Billion, Two Hundred and Thirty Million, Forty-Five Thousand, Seven Hundred and Eighty-Nine
+*********************************
+1002003 reads as One Million, Two Thousand, Three
+*********************************
