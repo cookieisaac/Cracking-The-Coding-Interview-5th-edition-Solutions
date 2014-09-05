@@ -1,0 +1,12 @@
+The occurence for word "Hello" in pg4300.txt is 1
+The occurence for word "Hello" in pg5000.txt is 0
+The occurence for word "Hello" in pg20417.txt is 0
+******************************************************************************************************
+The occurence for word "hello" in pg4300.txt is 1
+The occurence for word "hello" in pg5000.txt is 0
+The occurence for word "hello" in pg20417.txt is 0
+******************************************************************************************************
+The occurence for word "what" in pg4300.txt is 762
+The occurence for word "what" in pg5000.txt is 189
+The occurence for word "what" in pg20417.txt is 199
+******************************************************************************************************
