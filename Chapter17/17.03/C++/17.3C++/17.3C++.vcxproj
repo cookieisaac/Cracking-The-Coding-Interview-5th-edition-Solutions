@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{773F4943-F78A-42DE-A99D-8DE1B56E393E}</ProjectGuid>
-    <RootNamespace>_17_9C__</RootNamespace>
-    <ProjectName>17.09C++</ProjectName>
+    <ProjectGuid>{A68ED1DD-D5F8-461E-8C95-37F8FC03351F}</ProjectGuid>
+    <RootNamespace>My173C</RootNamespace>
+    <ProjectName>17.03C++</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -65,19 +65,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="Input.txt" />
+    <Text Include="Output.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Solution.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Solution.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="Input.txt" />
-    <Text Include="Output.txt" />
-    <Text Include="pg20417.txt" />
-    <Text Include="pg4300.txt" />
-    <Text Include="pg5000.txt" />
-    <Text Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
