@@ -1,0 +1,39 @@
+<family lastName="McDowell" state="CA">
+		<person firstName="Gaye">Some Message</person>
+</family>
+#
+<dinner time="19:00" dresscode="informal">
+    <course id="starter">
+        <food>Consomme</food>
+        <food>Tomato soup</food>
+    <course>
+    <course id="salad" optional="optional">
+        <food>Green salad</food>
+    <course>
+    <course id="main">
+        <food>Steak and kidney pie</food>
+        <food type=vegetarian>Spinach lasagna</food>
+    <course>
+    <course id="dessert">
+        <food>Fruit</food>
+        <food>Ice cream</food>
+        <food>Coffee</food>
+    <course>
+</dinner>
+#
+<TestTag at1="av1" at2="av2">
+	<TestTag3 at1="av1" at2="av2">TestValue3</TestTag3>
+	<TestTag2 at1="av1" at2="av2">
+		<TestTag3 at1="av1" at2="av2">TestValue3</TestTag3>
+		<TestTag3 at1="av1" at2="av2">TestValue3</TestTag3>
+		<TestTag3 at1="av1" at2="av2">TestValue3</TestTag3>
+	</TestTag2>
+</TestTag>
+#
+
+
+element tag family attribute(tag lastName, value McDowell) attribute(tag state, value CA)
+subelement tag person atttribute (tag firstName value Gaye) value "Some Message"
+
+if(element)
+ Element(tag)
