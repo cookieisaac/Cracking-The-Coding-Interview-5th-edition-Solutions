@@ -1,0 +1,8 @@
+<TestTag at1="av1" at2="av2">
+	<TestTag3 at1="av1" at2="av2">TestValue3</TestTag3>
+	<TestTag2 at1="av1" at2="av2">
+		<TestTag3 at1="av1" at2="av2">TestValue3</TestTag3>
+		<TestTag3 at1="av1" at2="av2">TestValue3</TestTag3>
+		<TestTag3 at1="av1" at2="av2">TestValue3</TestTag3>
+	</TestTag2>
+</TestTag>
