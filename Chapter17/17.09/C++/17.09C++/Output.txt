@@ -10,3 +10,7 @@ The occurence for word "what" in pg4300.txt is 762
 The occurence for word "what" in pg5000.txt is 189
 The occurence for word "what" in pg20417.txt is 199
 ******************************************************************************************************
+The occurence for word "find" in pg4300.txt is 68
+The occurence for word "find" in pg5000.txt is 141
+The occurence for word "find" in pg20417.txt is 48
+******************************************************************************************************
