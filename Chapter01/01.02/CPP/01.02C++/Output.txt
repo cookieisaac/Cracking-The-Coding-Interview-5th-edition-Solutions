@@ -1,0 +1,2 @@
+Reverse of string "Hello World" is: "dlroW olleH"
+Reverse of string "Try to reverse me!" is: "!em esrever ot yrT"
