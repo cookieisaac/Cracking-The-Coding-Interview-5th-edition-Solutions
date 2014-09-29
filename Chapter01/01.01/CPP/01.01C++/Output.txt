@@ -1,0 +1,4 @@
+121: contains duplicate characters!
+12343: contains duplicate characters!
+1234: contains only unique characters! 
+123: contains only unique characters! 
