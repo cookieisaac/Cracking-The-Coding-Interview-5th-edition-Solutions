@@ -1,0 +1,16 @@
+String 1: "dog"
+String 2: "god"
+They are permutation of one another.
+
+String 1: "dog"
+String 2: "    god"
+They are not permutation of one another.
+
+String 1: "test"
+String 2: "test"
+They are permutation of one another.
+
+String 1: "abcdefg"
+String 2: "gabcdef"
+They are permutation of one another.
+
