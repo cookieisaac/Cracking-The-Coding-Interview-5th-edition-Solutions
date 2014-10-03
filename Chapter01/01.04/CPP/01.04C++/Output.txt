@@ -1,0 +1,21 @@
+Original string is: "This is fun.".
+The new string is: "This%20is%20fun.".
+**************************************
+Original string is: "R e p l a c e a l l t h e s p a c e s".
+The new string is: "R%20e%20p%20l%20a%20c%20e%20a%20l%20l%20t%20h%20e%20s%20p%20a%20c%20e%20s".
+**************************************
+Original string is: "	Tabs".
+The new string is: "	Tabs".
+**************************************
+Original string is: "TrailingSpaceBehind             ".
+The new string is: "TrailingSpaceBehind%20%20%20%20%20%20%20%20%20%20%20%20%20".
+**************************************
+Original string is: "NoneSpace".
+The new string is: "NoneSpace".
+**************************************
+Original string is: "".
+The new string is: "".
+**************************************
+Original string is: "Empty line above".
+The new string is: "Empty%20line%20above".
+**************************************
