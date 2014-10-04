@@ -1,0 +1,7 @@
+This is fun.
+R e p l a c e a l l t h e s p a c e s
+	Tabs
+TrailingSpaceBehind             
+NoneSpace
+
+Empty line above

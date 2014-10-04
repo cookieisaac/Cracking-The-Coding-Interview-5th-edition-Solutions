@@ -1,0 +1,12 @@
+aabcccccaaa
+a
+abcdeeefg
+aeeefggg
+
+space        
+	Tab
+																	Tabs
+			T
+/////***\\\
+White space in between
+aa        cccccc

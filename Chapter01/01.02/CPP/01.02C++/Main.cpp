@@ -34,7 +34,7 @@ int main(void)
 		reverse(cstr);
 		//4. Create a reversed string
 		string reversed_line = string(cstr);
-
+		free(cstr);
 		outputFile << "Reverse of string \"" << line << "\" is: \""<< reversed_line<< "\""<< endl;
 	}
 
