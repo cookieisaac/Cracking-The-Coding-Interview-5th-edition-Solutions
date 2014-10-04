@@ -1,0 +1,53 @@
+Original matrix is: 
+1	2	3	4
+2	3	4	5
+3	4	5	6
+After setting zeros, the matrix is: 
+1	2	3	4
+2	3	4	5
+3	4	5	6
+**********************************************
+Original matrix is: 
+1	2	3	4
+2	3	4	0
+3	4	0	1
+1	2	3	4
+After setting zeros, the matrix is: 
+1	2	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+**********************************************
+Original matrix is: 
+9
+0
+1
+After setting zeros, the matrix is: 
+0
+0
+0
+**********************************************
+Original matrix is: 
+1	2	3	4	5	6	0	8
+After setting zeros, the matrix is: 
+0	0	0	0	0	0	0	0
+**********************************************
+Original matrix is: 
+9
+After setting zeros, the matrix is: 
+9
+**********************************************
+Original matrix is: 
+0
+After setting zeros, the matrix is: 
+0
+**********************************************
+Original matrix is: 
+0	1	2
+2	1	0
+1	0	2
+After setting zeros, the matrix is: 
+0	0	0
+0	0	0
+0	0	0
+**********************************************
