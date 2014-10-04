@@ -1,0 +1,5 @@
+String "waterbottle" is a rotation of string "erbottlewat"
+String "abcdefg" is a rotation of string "cdefgab"
+String "abcde" is a rotation of string "abcde"
+String "abcde" is not a rotation of string "abdce"
+String "abcde" is not a rotation of string "edcba"
