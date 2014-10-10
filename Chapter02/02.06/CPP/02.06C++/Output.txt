@@ -1,0 +1,16 @@
+The original list is: ( a --> b --> c --> d --> e --> f --> g -> NULL ) of size 7
+After creating loop at 'd', the list is: ( a --> b --> c --> d --> e --> f --> g --> d --> e --> f --> g --> d --> e --> f --> g --> d --> e --> f --> g --> d --> e --> f -> Infinity.... )
+Function findLoopEntry() finds out the loop entry is at 'd'.
+****************************************************************************************************************
+The original list is: ( a --> b --> c --> d -> NULL ) of size 4
+After creating loop at 'd', the list is: ( a --> b --> c --> d --> d --> d --> d --> d --> d --> d --> d --> d --> d -> Infinity.... )
+Function findLoopEntry() finds out the loop entry is at 'd'.
+****************************************************************************************************************
+The original list is: ( a --> b --> c --> d -> NULL ) of size 4
+After creating loop at 'e', the list is: ( a --> b --> c --> d -> NULL )
+Function findLoopEntry() couldn't find a loop entry.
+****************************************************************************************************************
+The original list is: ( a --> b --> c --> d -> NULL ) of size 4
+After creating loop at 'a', the list is: ( a --> b --> c --> d --> a --> b --> c --> d --> a --> b --> c --> d --> a -> Infinity.... )
+Function findLoopEntry() finds out the loop entry is at 'a'.
+****************************************************************************************************************
