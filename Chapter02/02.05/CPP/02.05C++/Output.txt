@@ -1,0 +1,60 @@
+Addition for List in Reverse Order: 
+First addend is ( 7 -> 1 -> 6 )
+Second addend is ( 5 -> 9 -> 2 )
+The reverse result is ( 2 -> 1 -> 9 )
+----------------------------------------
+Addition for List in Forward Order: 
+First addend is ( 6 -> 1 -> 7 )
+Second addend is ( 2 -> 9 -> 5 )
+The forward result is ( 9 -> 1 -> 2 )
+================================================
+Addition for List in Reverse Order: 
+First addend is ( 7 -> 1 -> 6 )
+Second addend is ( 7 -> 1 -> 6 )
+The reverse result is ( 4 -> 3 -> 2 -> 1 )
+----------------------------------------
+Addition for List in Forward Order: 
+First addend is ( 6 -> 1 -> 7 )
+Second addend is ( 6 -> 1 -> 7 )
+The forward result is ( 1 -> 2 -> 3 -> 4 )
+================================================
+Addition for List in Reverse Order: 
+First addend is ( 9 )
+Second addend is ( 9 -> 9 -> 2 )
+The reverse result is ( 8 -> 0 -> 3 )
+----------------------------------------
+Addition for List in Forward Order: 
+First addend is ( 9 )
+Second addend is ( 2 -> 9 -> 9 )
+The forward result is ( 3 -> 0 -> 8 )
+================================================
+Addition for List in Reverse Order: 
+First addend is ( 0 )
+Second addend is ( 0 )
+The reverse result is ( 0 )
+----------------------------------------
+Addition for List in Forward Order: 
+First addend is ( 0 )
+Second addend is ( 0 )
+The forward result is ( 0 )
+================================================
+Addition for List in Reverse Order: 
+First addend is ( 0 -> 0 -> 1 )
+Second addend is ( 0 )
+The reverse result is ( 0 -> 0 -> 1 )
+----------------------------------------
+Addition for List in Forward Order: 
+First addend is ( 1 -> 0 -> 0 )
+Second addend is ( 0 )
+The forward result is ( 1 -> 0 -> 0 )
+================================================
+Addition for List in Reverse Order: 
+First addend is ( 9 -> 9 -> 9 )
+Second addend is ( 1 )
+The reverse result is ( 0 -> 0 -> 0 -> 1 )
+----------------------------------------
+Addition for List in Forward Order: 
+First addend is ( 9 -> 9 -> 9 )
+Second addend is ( 1 )
+The forward result is ( 1 -> 0 -> 0 -> 0 )
+================================================

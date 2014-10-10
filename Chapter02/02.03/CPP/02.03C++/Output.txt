@@ -1,0 +1,8 @@
+Original list is a list of size 5: 
+1 -> 2 -> 3 -> 4 -> 5 -> NULL
+After deleting the third node, list size is 4
+1 -> 2 -> 4 -> 5 -> NULL
+After delete the first node, list size is 3
+2 -> 4 -> 5 -> NULL
+We can't delete the last node by this method. After "deleting" node5, the size is 3
+2 -> 4 -> 5 -> NULL
