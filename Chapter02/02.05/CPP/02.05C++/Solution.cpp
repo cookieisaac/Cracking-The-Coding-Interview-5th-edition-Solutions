@@ -78,7 +78,87 @@ LinkedList::~LinkedList()
 
 void additionInForwardOrder(LinkedList& A, LinkedList& B, LinkedList& result)
 {
-	//TODO
+	Node* runnerA=A.getHead();
+	Node* runnerB=B.getHead();
+
+	Node* pDoneA=NULL;
+	Node* pDoneB=NULL;
+
+	int sum = 0;
+	int carry = 0;
+	int digit = 0;
+
+	while (pDoneA != A.getHead() && pDoneB != B.getHead())
+	{
+		// Run runner A and B to get the right-most non-calculated bit
+		runnerA = A.getHead();
+		while (runnerA->getNext() != pDoneA)
+		{
+			runnerA = runnerA->getNext();
+		}
+
+		runnerB = B.getHead();
+		while (runnerB->getNext() != pDoneB)
+		{
+			runnerB = runnerB->getNext();
+		}
+
+		// Do the computation
+		sum = runnerA->getValue() + runnerB->getValue() + carry;
+		digit = sum % 10;
+		carry = sum / 10;
+
+		result.addNodeAtHead(digit);
+
+		// Update the Done pointer
+		pDoneA = runnerA;
+		pDoneB = runnerB;
+	}
+
+	while (pDoneA != A.getHead())
+	{
+		runnerA = A.getHead();
+		while (runnerA->getNext() != pDoneA)
+		{
+			runnerA = runnerA->getNext();
+		}
+
+		// Do the computation
+		sum = runnerA->getValue() + carry;
+		digit = sum % 10;
+		carry = sum / 10;
+
+		result.addNodeAtHead(digit);
+
+		// Update the Done pointer
+		pDoneA = runnerA;
+	}
+
+	while (pDoneB != B.getHead())
+	{
+		runnerB = B.getHead();
+		while (runnerB->getNext() != pDoneB)
+		{
+			runnerB = runnerB->getNext();
+		}
+
+		// Do the computation
+		sum = runnerB->getValue() + carry;
+		digit = sum % 10;
+		carry = sum / 10;
+
+		result.addNodeAtHead(digit);
+
+		// Update the Done pointer
+		pDoneB = runnerB;
+	}
+
+	if (carry != 0)
+	{
+		result.addNodeAtHead(carry);
+	}
+
+
 }
 
 void additionInReverseOrder(LinkedList& A, LinkedList& B, LinkedList& result)
