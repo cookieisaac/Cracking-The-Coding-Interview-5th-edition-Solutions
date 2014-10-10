@@ -1,5 +1,7 @@
 #include <fstream>
 #include <iostream>
+#include <string>
+#include <sstream>
 #include "Solution.h"
 
 using namespace std;
@@ -23,7 +25,25 @@ int main(void)
 
 	while (!inputFile.eof())
 	{
-		//Implement Testing Here
+		string line;
+		getline(inputFile, line);
+
+		stringstream ss;
+		ss << line;
+
+		DoublelyLinkedList dll;
+		ss >> dll;
+
+		outputFile << "Test list is " << dll << " of size " << dll.getSize() << endl;
+		if (dll.isPalindrome())
+		{
+			outputFile << "It is a palindrome." << endl;
+		}
+		else
+		{
+			outputFile << "It is NOT a palindrome." << endl;
+		}
+		outputFile << "***************************************************************************************************" << endl;
 	}
 
 	inputFile.close();
