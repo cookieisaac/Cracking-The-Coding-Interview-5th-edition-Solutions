@@ -1,0 +1,90 @@
+Initial Stack: (1 -> 2 -> 3 -> 4 -> 5 -> 6 ->  NULL )
+Its size is 6 its min value is 1
+---------------------------------------------------
+After popping 1 time(s): (1 -> 2 -> 3 -> 4 -> 5 ->  NULL )
+Its size is 5 its min value is 1
+---------------------------------------------------
+After popping 2 time(s): (1 -> 2 -> 3 -> 4 ->  NULL )
+Its size is 4 its min value is 1
+---------------------------------------------------
+After popping 3 time(s): (1 -> 2 -> 3 ->  NULL )
+Its size is 3 its min value is 1
+---------------------------------------------------
+After popping 4 time(s): (1 -> 2 ->  NULL )
+Its size is 2 its min value is 1
+---------------------------------------------------
+After popping 5 time(s): (1 ->  NULL )
+Its size is 1 its min value is 1
+---------------------------------------------------
+After popping 6 time(s): ( NULL )
+Its size is 0 its min value is 100000
+**************************************************************************
+Initial Stack: (6 -> 5 -> 4 -> 3 -> 2 -> 1 ->  NULL )
+Its size is 6 its min value is 1
+---------------------------------------------------
+After popping 1 time(s): (6 -> 5 -> 4 -> 3 -> 2 ->  NULL )
+Its size is 5 its min value is 2
+---------------------------------------------------
+After popping 2 time(s): (6 -> 5 -> 4 -> 3 ->  NULL )
+Its size is 4 its min value is 3
+---------------------------------------------------
+After popping 3 time(s): (6 -> 5 -> 4 ->  NULL )
+Its size is 3 its min value is 4
+---------------------------------------------------
+After popping 4 time(s): (6 -> 5 ->  NULL )
+Its size is 2 its min value is 5
+---------------------------------------------------
+After popping 5 time(s): (6 ->  NULL )
+Its size is 1 its min value is 6
+---------------------------------------------------
+After popping 6 time(s): ( NULL )
+Its size is 0 its min value is 100000
+**************************************************************************
+Initial Stack: (3 -> 6 -> 1 -> 5 -> 7 -> 4 ->  NULL )
+Its size is 6 its min value is 1
+---------------------------------------------------
+After popping 1 time(s): (3 -> 6 -> 1 -> 5 -> 7 ->  NULL )
+Its size is 5 its min value is 1
+---------------------------------------------------
+After popping 2 time(s): (3 -> 6 -> 1 -> 5 ->  NULL )
+Its size is 4 its min value is 1
+---------------------------------------------------
+After popping 3 time(s): (3 -> 6 -> 1 ->  NULL )
+Its size is 3 its min value is 1
+---------------------------------------------------
+After popping 4 time(s): (3 -> 6 ->  NULL )
+Its size is 2 its min value is 3
+---------------------------------------------------
+After popping 5 time(s): (3 ->  NULL )
+Its size is 1 its min value is 3
+---------------------------------------------------
+After popping 6 time(s): ( NULL )
+Its size is 0 its min value is 100000
+**************************************************************************
+Initial Stack: (4 -> 4 -> 3 -> 3 -> 1 -> 1 -> 4 -> 1 ->  NULL )
+Its size is 8 its min value is 1
+---------------------------------------------------
+After popping 1 time(s): (4 -> 4 -> 3 -> 3 -> 1 -> 1 -> 4 ->  NULL )
+Its size is 7 its min value is 1
+---------------------------------------------------
+After popping 2 time(s): (4 -> 4 -> 3 -> 3 -> 1 -> 1 ->  NULL )
+Its size is 6 its min value is 1
+---------------------------------------------------
+After popping 3 time(s): (4 -> 4 -> 3 -> 3 -> 1 ->  NULL )
+Its size is 5 its min value is 1
+---------------------------------------------------
+After popping 4 time(s): (4 -> 4 -> 3 -> 3 ->  NULL )
+Its size is 4 its min value is 3
+---------------------------------------------------
+After popping 5 time(s): (4 -> 4 -> 3 ->  NULL )
+Its size is 3 its min value is 3
+---------------------------------------------------
+After popping 6 time(s): (4 -> 4 ->  NULL )
+Its size is 2 its min value is 4
+---------------------------------------------------
+After popping 7 time(s): (4 ->  NULL )
+Its size is 1 its min value is 4
+---------------------------------------------------
+After popping 8 time(s): ( NULL )
+Its size is 0 its min value is 100000
+**************************************************************************
