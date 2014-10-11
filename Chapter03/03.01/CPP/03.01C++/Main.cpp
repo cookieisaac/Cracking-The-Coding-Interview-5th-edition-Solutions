@@ -21,10 +21,66 @@ int main(void)
 		exit (1);
 	}
 
-	while (!inputFile.eof())
+	ThreeStacks ts;
+	outputFile << "Initial State: " << endl;
+	outputFile << ts << endl;
+	outputFile << "**************************************************" << endl;
+	
+	for (int value = 0; value < 100; value++)
 	{
-		//Implement Testing Here
+		if (value % 3 == 0)
+		{
+			ts.push(value);
+		}
+		else if (value % 3 == 1)
+		{
+			ts.push(value, 'B');
+		}
+		else
+		{
+			ts.push(value, 'C');
+		}
 	}
+
+	outputFile << "After insertion: " << endl;
+	outputFile << ts << endl;
+	outputFile << "**************************************************" << endl;
+
+	for (int counter = 0; counter < 60; counter++)
+	{
+		if (counter % 3 == 0)
+		{
+			ts.pop();
+		}
+		else if (counter % 3 == 1)
+		{
+			ts.pop('B');
+		}
+		else
+		{
+			ts.pop('C');
+		}
+	}
+
+	outputFile << "After popping 20 elements in each stack: " << endl;
+	outputFile << ts << endl;
+	outputFile << "**************************************************" << endl;
+
+	for (int counter = 0; counter < 30; counter++)
+	{
+		if (counter % 3 == 0)
+		{
+			ts.pop();
+		}
+		else
+		{
+			ts.pop('C');
+		}
+	}
+
+	outputFile << "After popping 10 elements in stack A and poppint 20 elements in stack C: " << endl;
+	outputFile << ts << endl;
+	outputFile << "**************************************************" << endl;
 
 	inputFile.close();
 	outputFile.close();
