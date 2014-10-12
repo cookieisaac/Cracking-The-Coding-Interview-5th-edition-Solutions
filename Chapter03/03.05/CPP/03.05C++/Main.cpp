@@ -21,9 +21,33 @@ int main(void)
 		exit (1);
 	}
 
-	while (!inputFile.eof())
+	MyQueue mq;
+
+	for (int value = 1; value < 11; value++)
 	{
-		//Implement Testing Here
+		mq.enqueue(value);
+	}
+	outputFile << "Initial queue: " << mq << endl;
+	outputFile << "Size: " << mq.getSize() << " and peek returns " << mq.peek() << endl;
+	outputFile << "------------------------------------------------------" << endl;
+	
+	for (int counter = 20; counter < 50; counter++)
+	{
+		if (counter % 3 == 0)
+		{
+			mq.enqueue(counter);
+			outputFile << "After enqueue: " << mq << endl;
+			outputFile << "Size: " << mq.getSize() << " and peek returns " << mq.peek() << endl;
+			outputFile << "------------------------------------------------------" << endl;
+		}
+		else
+		{
+			mq.dequeue();
+			outputFile << "After enqueue: " << mq << endl;
+			outputFile << "Size: " << mq.getSize() << " and peek returns " << mq.peek() << endl;
+			outputFile << "------------------------------------------------------" << endl;
+		}
+
 	}
 
 	inputFile.close();
