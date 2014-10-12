@@ -1,0 +1,48 @@
+Initial state: 
+Cat queue: (  )
+Dog queue: (  )
+-----------------------------------------------------------------
+After enqueue two cats and one dog: 
+Cat queue: ( Cat[1] <- Cat[2] )
+Dog queue: ( Dog[3] )
+-----------------------------------------------------------------
+After enqueue three dogs: 
+Cat queue: ( Cat[1] <- Cat[2] )
+Dog queue: ( Dog[3] <- Dog[4] <- Dog[5] <- Dog[6] )
+-----------------------------------------------------------------
+After dequeue one cat: 
+Cat queue: ( Cat[2] )
+Dog queue: ( Dog[3] <- Dog[4] <- Dog[5] <- Dog[6] )
+-----------------------------------------------------------------
+After dequeue one animal: 
+Cat queue: (  )
+Dog queue: ( Dog[3] <- Dog[4] <- Dog[5] <- Dog[6] )
+-----------------------------------------------------------------
+After enqueue two cats: 
+Cat queue: ( Cat[7] <- Cat[8] )
+Dog queue: ( Dog[3] <- Dog[4] <- Dog[5] <- Dog[6] )
+-----------------------------------------------------------------
+After dequeue two dogs: 
+Cat queue: ( Cat[7] <- Cat[8] )
+Dog queue: ( Dog[5] <- Dog[6] )
+-----------------------------------------------------------------
+After dequeue one animal: 
+Cat queue: ( Cat[7] <- Cat[8] )
+Dog queue: ( Dog[6] )
+-----------------------------------------------------------------
+After dequeue one animal: 
+Cat queue: ( Cat[7] <- Cat[8] )
+Dog queue: (  )
+-----------------------------------------------------------------
+After dequeue one animal: 
+Cat queue: ( Cat[8] )
+Dog queue: (  )
+-----------------------------------------------------------------
+After dequeue one animal: 
+Cat queue: (  )
+Dog queue: (  )
+-----------------------------------------------------------------
+After dequeue one animal: 
+Cat queue: (  )
+Dog queue: (  )
+-----------------------------------------------------------------
