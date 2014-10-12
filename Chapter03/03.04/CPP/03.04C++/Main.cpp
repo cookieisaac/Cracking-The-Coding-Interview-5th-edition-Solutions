@@ -23,7 +23,12 @@ int main(void)
 
 	while (!inputFile.eof())
 	{
-		//Implement Testing Here
+		int nDisks;
+		inputFile >> nDisks;
+		Hanoi myHanoi(nDisks);
+		
+		myHanoi.printSolutionSteps(outputFile);
+		outputFile << "*******************************************" << endl;
 	}
 
 	inputFile.close();
