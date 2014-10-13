@@ -1,6 +1,8 @@
 #include <fstream>
 #include <iostream>
 #include "Solution.h"
+#include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -23,7 +25,24 @@ int main(void)
 
 	while (!inputFile.eof())
 	{
-		//Implement Testing Here
+		string line;
+		getline(inputFile, line);
+
+		stringstream ss;
+		ss << line;
+
+		Tree tree;
+		ss >> tree;
+		outputFile <<"Orignial Tree: "<< tree << endl;
+		if (tree.isBalanced())
+		{
+			outputFile << "This tree is balanced." << std::endl;
+		}
+		else
+		{
+			outputFile << "This tree is NOT balanced!" << std::endl;
+		}
+		outputFile << "-----------------------------------------------------------" << endl;
 	}
 
 	inputFile.close();
