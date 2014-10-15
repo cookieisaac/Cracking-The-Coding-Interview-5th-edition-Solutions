@@ -21,10 +21,23 @@ int main(void)
 		exit (1);
 	}
 
-	while (!inputFile.eof())
+
+	vector<char> v;
+	for (char value = 'a'; value <= 'f'; value++)
 	{
-		//Implement Testing Here
+		v.push_back(value);
 	}
+
+	Graph<char> g(v);
+
+	g.connectVertex('a', 'b');
+	g.connectVertex('a', 'e');
+	g.connectVertex('b', 'd');
+	g.connectVertex('b', 'c');
+	g.connectVertex('e', 'd');
+	g.connectVertex('e', 'f');
+
+	outputFile << g;
 
 	inputFile.close();
 	outputFile.close();
