@@ -1,0 +1,7 @@
+6 6
+a b
+a e
+b d
+b c
+e d
+e f

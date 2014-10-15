@@ -5,6 +5,9 @@
 #include <vector>
 #include <list>
 #include <map>
+#include <queue>
+#include <stack>
+#include <string>
 
 typedef enum
 {
@@ -27,7 +30,7 @@ private:
 	public:
 		explicit Vertex(const Ty in) :_data(in), _status(NOT_VISITED){}
 		~Vertex(){}
-		void setStatus(const STATUS s){_status = s}
+		void setStatus(const STATUS s){ _status = s; }
 		STATUS getStatus() const{ return _status; }
 		Ty getData() const{ return _data; }
 	};
@@ -90,6 +93,8 @@ public:
 		}
 	}
 
+	void setOutput(std::ostream& out){ _out = out; }
+
 	bool hasCycles(){ return _isCyclic; }
 
 	void connectVertex(const T&s, const T&d)
@@ -129,6 +134,202 @@ public:
 		}
 	}
 
+	Vertices findPath(const T& source, const T& destination)
+	{
+		Vertex<T>* src = find_vertex(source);
+		Vertex<T>* dest = find_vertex(destination);
+
+		Vertices path;
+		std::map<Vertex<T>*, Vertex<T>*> parent;
+
+		bool found = false;
+		if (src == NULL || dest == NULL)
+		{
+			return path;
+		}
+		else if (src == dest)
+		{
+			path.push_back(src);
+			return path;
+		}
+		else
+		{
+			reset();
+			
+			std::queue<Vertex<T>*> q;
+			q.push(src);
+			parent.insert(std::pair<Vertex<T>*, Vertex<T>*>(src, NULL));
+
+			while (!q.empty())
+			{
+				Vertex<T>* cur = q.front();
+				q.pop();
+				
+				AdjListItr itr = _list.find(cur);
+
+				if (itr != _list.end())
+				{
+					Vertices neighbors = itr->second;
+					for (VerticesItr vItr = neighbors.begin(); vItr != neighbors.end(); vItr++)
+					{
+						parent.insert(std::pair<Vertex<T>*, Vertex<T>*>((*vItr), cur));
+						STATUS status = (*vItr)->getStatus();
+
+						if (status == NOT_VISITED)
+						{
+							if ((*vItr) == dest)
+							{
+								found = true;
+								//Construct path for return
+								
+								Vertex<T>* temp = (*vItr);
+								path.push_front(temp);
+								while (temp != src)
+								{
+									path.push_front(parent[temp]);
+									temp = parent[temp];
+								}
+
+								return path;
+							}
+							else
+							{
+								(*vItr)->setStatus(IN_PROGRESS);
+								q.push(*vItr);
+							}
+						}
+					}
+				}
+
+				cur->setStatus(VISITED);
+				path.remove(cur);
+			}
+		}
+		return path;
+	}
+
+	void BreadthFirstTraversal(std::ostream& os)
+	{
+		reset(); // reset node status as NOT_VISITED
+		os << "Breadth First Tranversal" << std::endl;
+
+		std::queue<Vertex<T>*> q;
+
+		for (VerticesItr itr=_vertices.begin(); itr != _vertices.end() && (*itr)->getStatus() != VISITED; itr++)
+		{
+			q.push(*itr);
+
+			while (!q.empty())
+			{
+				Vertex<T>* cur = q.front();
+				q.pop();
+				if (cur->getStatus() != VISITED)
+				{
+					cur->setStatus(VISITED);
+					os << cur->getData() << " ";
+				}
+
+				AdjListItr jtr = _list.find(cur);
+				if (jtr != _list.end())
+				{
+					Vertices v = jtr->second;
+
+					VerticesItrConst vItr(v.begin());
+
+					for (; vItr != v.end(); vItr++)
+					{
+						if ((*vItr)->getStatus() != VISITED)
+						{
+							q.push(*vItr);
+						}
+					}
+				}
+			}
+		}
+		os << std::endl;
+	}
+
+	void DepthFirstTraversal(std::ostream& os)
+	{
+		reset(); // reset node status as NOT_VISITED
+		os << "Depth First Traversal" << endl;
+
+		std::stack<Vertex<T>*> s;
+
+		for (VerticesItr itr = _vertices.begin(); itr != _vertices.end(); itr++)
+		{
+			s.push(*itr);
+
+			while (!s.empty())
+			{
+				Vertex<T> *cur = s.top();
+				s.pop();
+
+				if (cur->getStatus() != VISITED)
+				{
+					os << cur->getData() << " ";
+					cur->setStatus(IN_PROGRESS);
+				}
+
+				AdjListItr jtr = _list.find(cur);
+
+				if (jtr != _list.end())
+				{
+					Vertices v = jtr->second;
+					if (!v.empty())
+					{
+						for (VerticesItrConst vItr = v.begin(); vItr != v.end(); vItr++)
+						{
+							STATUS status = (*vItr)->getStatus();
+							if (status == IN_PROGRESS)
+							{
+								_isCyclic = true;
+							}
+							else if (status == NOT_VISITED)
+							{
+								(*vItr)->setStatus(IN_PROGRESS);
+								s.push(*vItr);
+							}
+						}
+					}
+				}
+				cur->setStatus(VISITED);
+			}
+		}
+		os << endl;
+		
+		if (hasCycles())
+		{
+			os << "Graph has cycles!" << endl;
+		}
+		else
+		{
+			os << "Graph  has no cycles! " << endl;
+		}
+	}
+
+	void printPath(Vertices path, std::ostream& os)
+	{
+		if (!path.empty())
+		{
+			os << "Path is found! " << std::endl;
+			VerticesItr pathItr= path.begin();
+			while (pathItr != path.end()&&(*pathItr)!=NULL)
+			{
+				os << (*pathItr)->getData();
+				pathItr++;
+				if (pathItr != path.end())
+				{
+					os << " -> ";
+				}
+			}
+			os << endl;
+		}
+		else
+		{
+			os << "Path can not be found! " << std::endl;
+		}
+	}
 
 	friend std::ostream& operator<<(std::ostream& os, Graph<T>& g)
 	{

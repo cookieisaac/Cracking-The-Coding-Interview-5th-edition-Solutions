@@ -4,3 +4,29 @@ c:
 d:
 e: -> d;  -> f; 
 f:
+-------------------------------------------------
+Breadth First Tranversal
+a b e d c f 
+-------------------------------------------------
+Depth First Traversal
+a e f d b c 
+Graph  has no cycles! 
+-------------------------------------------------
+Find path between a and f
+Path is found! 
+a -> e -> f
+-------------------------------------------------
+Find path between a and d
+Path is found! 
+a -> b -> d
+-------------------------------------------------
+Find path between g and g
+Path is found! 
+f
+-------------------------------------------------
+Find path between d and f
+Path can not be found! 
+-------------------------------------------------
+Find path between g and i
+Path can not be found! 
+-------------------------------------------------
