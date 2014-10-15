@@ -21,10 +21,11 @@ int main(void)
 		exit (1);
 	}
 
-	while (!inputFile.eof())
-	{
-		//Implement Testing Here
-	}
+	int myArray[] = { 1, 2, 3, 4 };
+
+	Tree t;
+	t.populateTreeFromSortedArray(myArray, 4);
+	outputFile << t;
 
 	inputFile.close();
 	outputFile.close();
