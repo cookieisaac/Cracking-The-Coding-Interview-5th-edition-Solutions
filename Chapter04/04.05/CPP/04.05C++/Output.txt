@@ -30,7 +30,7 @@ Orignial Tree: (5(4(3(2(1(*)(*))(*))(*))(*))(*))
 This tree is NOT balanced!
 This tree is a binary search tree.
 -----------------------------------------------------------
-Orignial Tree: (3(1(*)(4(5(*)(*))(*)))(*))
-This tree is NOT balanced!
+Orignial Tree: (3(1(*)(4(*)(*)))(5(*)(*)))
+This tree is balanced.
 This tree is NOT a binary search tree!
 -----------------------------------------------------------
