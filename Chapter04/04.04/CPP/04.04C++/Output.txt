@@ -1,0 +1,41 @@
+Orignial Tree: (*)
+LayerLists: 
+-----------------------------------------------------------
+Orignial Tree: (a(*)(*))
+LayerLists: 
+Layer [0]: a 
+-----------------------------------------------------------
+Orignial Tree: (a(b(*)(*))(c(*)(*)))
+LayerLists: 
+Layer [0]: a 
+Layer [1]: b c 
+-----------------------------------------------------------
+Orignial Tree: (a(b(a(*)(*))(*))(c(*)(a(*)(*))))
+LayerLists: 
+Layer [0]: a 
+Layer [1]: b c 
+Layer [2]: a a 
+-----------------------------------------------------------
+Orignial Tree: (a(b(a(*)(*))(*))(c(*)(*)))
+LayerLists: 
+Layer [0]: a 
+Layer [1]: b c 
+Layer [2]: a 
+-----------------------------------------------------------
+Orignial Tree: (a(b(a(b(*)(*))(c(*)(*)))(*))(c(*)(*)))
+LayerLists: 
+Layer [0]: a 
+Layer [1]: b c 
+Layer [2]: a 
+Layer [3]: b c 
+-----------------------------------------------------------
+Orignial Tree: (a(a(a(a(*)(*))(a(a(a(a(*)(*))(*))(*))(*)))(*))(*))
+LayerLists: 
+Layer [0]: a 
+Layer [1]: a 
+Layer [2]: a 
+Layer [3]: a a 
+Layer [4]: a 
+Layer [5]: a 
+Layer [6]: a 
+-----------------------------------------------------------
