@@ -21,12 +21,26 @@ int main(void)
 		exit (1);
 	}
 
-	int myArray[] = { 1, 2, 3, 4 };
+	int N;
+	while (inputFile >> N)
+	{
+		outputFile << "Test case of size [" << N << "]: { ";
+		int* myArray = (int*)malloc(sizeof(int)*N);
 
-	Tree t;
-	t.populateTreeFromSortedArray(myArray, 4);
-	outputFile << t;
+		for (int i = 0; i < N; i++)
+		{
+			inputFile >> myArray[i];
+			outputFile << myArray[i]<< " ";
+		}
+		outputFile << "}" << endl;
 
+		Tree t;
+		t.populateTreeFromSortedArray(myArray, N);
+		outputFile << t << endl;
+		outputFile << "--------------------------------------------------------" << endl;
+
+		free(myArray);
+	}
 	inputFile.close();
 	outputFile.close();
 
